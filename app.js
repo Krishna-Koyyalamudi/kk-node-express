@@ -18,8 +18,8 @@ app.get('/help', (req, res) => {
     res.send("I am the one who needs a lot of help")
 })
 
-app.get('/help/:topic', (req, res) => {
-    res.send(`You had enough help for ${req.params.topic} start grinding!`)
+app.get('/help/:in', (req, res) => {
+    res.send(`You had enough help ${req.params.in} start grinding!`)
 })
 
 app.listen(port, () => {
